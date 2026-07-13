@@ -51,7 +51,7 @@ export default function AdminLoginPage() {
         <Image src={logoNoir} alt="LUCIE" className="mx-auto h-14 w-auto object-contain" />
 
         <h1 className="text-center font-display text-3xl text-kings-blue-dark">
-          Administration
+          Bossor_bii
         </h1>
 
         <div className="flex flex-col gap-1.5">
