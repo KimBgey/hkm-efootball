@@ -204,9 +204,9 @@ export function RegistrationForm() {
 
       <div className="rounded-xl bg-kings-blue/5 p-4">
         <p className="mb-3 text-sm text-slate-600">
-          Envoie 10.000 F CFA via Mobile Money au{" "}
-          <span className="font-semibold">+229 0155952589</span> ou{" "}
-          <span className="font-semibold">0155357747</span>, puis dépose la capture d&apos;écran de
+          Envoie 10.000 F CFA via Momo au{" "}
+          <span className="font-semibold">+229 01 56 22 89 50</span> ou via moov money{" "}
+          <span className="font-semibold">+229 01 55 95 25 89</span>, puis dépose la capture d&apos;écran de
           paiement ci-dessous, avec la photo du joueur.
         </p>
 
@@ -281,7 +281,7 @@ function FileField({
         className="flex cursor-pointer items-center gap-3 rounded-lg border-2 border-dashed border-slate-300 px-4 py-3 text-sm text-slate-600 transition-colors duration-200 hover:border-kings-blue hover:text-kings-blue"
       >
         <UploadIcon className="h-5 w-5 shrink-0" />
-        <span className="truncate">{file ? file.name : "Choisir une image (jpg/png, 5MB max)"}</span>
+        <span className="min-w-0 truncate">{file ? file.name : "Choisir une image (jpg/png, 5MB max)"}</span>
       </label>
       <input
         id={id}
