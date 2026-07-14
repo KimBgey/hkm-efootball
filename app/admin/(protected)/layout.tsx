@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { getAdminAuth } from "@/lib/firebase-admin";
@@ -24,7 +25,12 @@ export default async function ProtectedAdminLayout({
   return (
     <div className="min-h-screen bg-slate-100">
       <header className="flex items-center justify-between bg-kings-blue-dark px-6 py-4 text-white">
-        <p className="font-display text-2xl">hkm eFootball kings — Admin</p>
+        <Link
+          href="/"
+          className="cursor-pointer font-display text-2xl transition-opacity duration-200 hover:opacity-80"
+        >
+          hkm eFootball kings — Admin
+        </Link>
         <LogoutButton />
       </header>
       <main className="px-6 py-8">{children}</main>

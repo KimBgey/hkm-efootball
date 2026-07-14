@@ -3,9 +3,9 @@ import logo from "@/app/assets/Logo.png";
 import { PhoneIcon } from "./icons";
 
 const SOCIAL_LINKS = [
-  { label: "Facebook", href: "#" },
-  { label: "Instagram", href: "#" },
-  { label: "WhatsApp", href: "#" },
+  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61582782158236" },
+  { label: "Instagram", href: "https://www.instagram.com/djonnyhkm?igsh=enVpeXljMTUxZGwx&utm_source=qr" },
+  { label: "WhatsApp", href: "https://wa.me/2290155952589" },
 ];
 
 export function Footer() {
