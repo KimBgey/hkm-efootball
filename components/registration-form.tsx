@@ -278,10 +278,12 @@ function FileField({
     <Field label={label} htmlFor={id}>
       <label
         htmlFor={id}
-        className="flex cursor-pointer items-center gap-3 rounded-lg border-2 border-dashed border-slate-300 px-4 py-3 text-sm text-slate-600 transition-colors duration-200 hover:border-kings-blue hover:text-kings-blue"
+        className="flex w-full max-w-full cursor-pointer items-center gap-2 overflow-hidden rounded-lg border-2 border-dashed border-slate-300 px-3 py-2.5 text-sm text-slate-600 transition-colors duration-200 hover:border-kings-blue hover:text-kings-blue sm:gap-3 sm:px-4 sm:py-3"
       >
         <UploadIcon className="h-5 w-5 shrink-0" />
-        <span className="min-w-0 truncate">{file ? file.name : "Choisir une image (jpg/png, 5MB max)"}</span>
+        <span className="min-w-0 flex-1 truncate">
+          {file ? file.name : "Choisir une image (max 5MB)"}
+        </span>
       </label>
       <input
         id={id}
