@@ -212,7 +212,7 @@ export function AdminDashboard() {
               value={motif}
               onChange={(e) => setMotif(e.target.value)}
               rows={4}
-              className="w-full rounded-lg border border-slate-300 px-4 py-3 outline-none focus:border-kings-blue focus:ring-2 focus:ring-kings-blue/20"
+              className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 outline-none focus:border-kings-blue focus:ring-2 focus:ring-kings-blue/20"
               placeholder="Explique la raison du rejet..."
             />
             <div className="mt-4 flex justify-end gap-2">
